@@ -7,7 +7,6 @@ var port = process.env.PORT || 3000;
 
 router.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/pages/index.html'));
-  //__dirname : It will resolve to your project folder.
 });
 
 // router.get('/about', function (req, res) {
