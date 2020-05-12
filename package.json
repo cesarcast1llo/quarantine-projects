@@ -1,5 +1,5 @@
 {
-  "name": "build-projects",
+  "name": "quarantine-projects",
   "version": "1.0.0",
   "description": "Building projects on extra time",
   "main": "index.js",
