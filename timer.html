@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Timer || Quarantine Projects</title>
+    <title>Timer | Quarantine Projects</title>
     <meta
       description="Building out awesome projects while learning new responsive page skills"
     />
@@ -15,16 +15,17 @@
     <link href="./assets/styles/timer.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-
-    <h1>Protected Timer</h1>
-    <div class="controls">
-      <button onclick="start()">Start</button>
-      <button onclick="pause()">pause</button>
-      <button onclick="stop()">stop</button>
-      <button onclick="restart()">restart</button>
+    <div class="timer-wrapper">
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      <h1>Quarantine Timer</h1>
+      <div class="controls">
+        <div class="stopwatch">00:00:00</div>
+        <button onclick="start()">START</button>
+        <button onclick="pause()">PAUSE</button>
+        <button onclick="stop()">STOP</button>
+        <button onclick="restart()">RESTART</button>
+      </div>
     </div>
-    <div class="stopwatch">00:00:00</div>
   </body>
   <script src="./assets/js/timer.js"></script>
 </html>
