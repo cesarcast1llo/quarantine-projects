@@ -1,9 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poiret+One&family=Raleway&display=swap");
+.dark-mode {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff));
+  background: linear-gradient(0deg, #000000, #ffffff);
+  color: white;
+}
+
+.dark-mode .index-wrapper .controls button {
+  background-color: white;
+}
+
 body {
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#3d3e3d));
   background: linear-gradient(0deg, #000000, #3d3e3d);
   color: white;
+}
+
+body label {
+  margin-right: 2rem;
+  width: 6rem;
+  height: 3.4rem;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+body label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+body label input span {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 1.23rem;
+  right: 1.8rem;
+  border-radius: 3rem;
+  background-color: var(--btn-color);
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+body #slider.dark {
+  right: 4.2rem;
+}
+
+body .index-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,31 +66,49 @@ body {
   margin: 0;
 }
 
-body .timer-wrapper {
-  margin: 0 auto;
-  text-align: center;
+body .index-wrapper .clock {
+  color: #17d4fe;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: 2px;
 }
 
-body .timer-wrapper h1 {
+@media (min-width: 376px) {
+  body .index-wrapper .clock {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 769px) {
+  body .index-wrapper .clock {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+}
+
+body .index-wrapper h1 {
   color: #17d4fe;
   font-family: 'Poiret One', cursive;
   font-size: 2.5rem;
   letter-spacing: 3px;
   margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 769) {
-  body .timer-wrapper h1 {
+  body .index-wrapper h1 {
     font-size: 4rem;
     letter-spacing: 5px;
   }
 }
 
-body .timer-wrapper .controls {
+body .index-wrapper .controls {
   text-align: center;
 }
 
-body .timer-wrapper .controls button {
+body .index-wrapper .controls button {
   border: 1px solid #17d4fe;
   border-radius: 10px;
   background-color: black;
@@ -60,7 +123,7 @@ body .timer-wrapper .controls button {
 }
 
 @media (min-width: 581px) {
-  body .timer-wrapper .controls button {
+  body .index-wrapper .controls button {
     display: inline-block;
     margin: 0 5px;
     width: inherit;
@@ -69,7 +132,7 @@ body .timer-wrapper .controls button {
 }
 
 @media (min-width: 769px) {
-  body .timer-wrapper .controls button {
+  body .index-wrapper .controls button {
     padding: 10px 40px;
     margin: 0 5px;
     font-size: 25px;
@@ -77,16 +140,9 @@ body .timer-wrapper .controls button {
   }
 }
 
-body .timer-wrapper .controls button:focus {
+body .index-wrapper .controls button:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-body .timer-wrapper .controls .stopwatch {
-  color: #17d4fe;
-  font-family: 'Noto Sans', sans-serif;
-  padding-bottom: 20px;
-  font-size: 70px;
-}
-/*# sourceMappingURL=timer.css.map */
+/*# sourceMappingURL=index.css.map */
