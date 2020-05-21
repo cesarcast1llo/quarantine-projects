@@ -91,36 +91,40 @@ body {
     .controls {
       text-align: center;
 
-      button {
-        border: 2px solid #17d4fe;
-        border-radius: 10px;
-        color: #17d4fe;
-        background-color: inherit;
-        font-family: 'Poiret One', cursive;
-        font-size: 20px;
-        margin: 10px auto;
-        padding: 10px 20px;
-        letter-spacing: 3px;
-        display: block;
-        width: 300px;
+      a {
+        text-decoration: none;
 
-        @media (min-width: 581px) {
-          display: inline-block;
-          margin: 0 5px;
-          width: inherit;
-          padding: 10px 30px;
-        }
+        button {
+          border: 2px solid #17d4fe;
+          border-radius: 10px;
+          color: #17d4fe;
+          background-color: inherit;
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+          margin: 10px auto;
+          padding: 10px 20px;
+          letter-spacing: 3px;
+          display: block;
+          width: 300px;
 
-        @media (min-width: 769px) {
-          padding: 10px 40px;
-          margin: 0 5px;
-          font-size: 25px;
-          letter-spacing: 4px;
-        }
+          @media (min-width: 581px) {
+            display: inline-block;
+            margin: 0 5px;
+            width: inherit;
+            padding: 10px 30px;
+          }
 
-        &:focus {
-          outline: none !important;
-          box-shadow: none;
+          @media (min-width: 769px) {
+            padding: 10px 40px;
+            margin: 0 5px;
+            font-size: 25px;
+            letter-spacing: 4px;
+          }
+
+          &:focus {
+            outline: none !important;
+            box-shadow: none;
+          }
         }
       }
     }
