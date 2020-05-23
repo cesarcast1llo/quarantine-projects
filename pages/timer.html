@@ -20,6 +20,13 @@
     <link href="../assets/styles/timer.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="dark-mode-switch">
+      <label class="switch">
+        <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <p id="emoji">☀️</p>
+    </div>
     <div class="timer-wrapper">
       <h1>Quarantine Timer</h1>
       <div class="controls">
@@ -32,4 +39,5 @@
     </div>
   </body>
   <script src="../assets/js/timer.js"></script>
+  <script src="../assets/js/index.js"></script>
 </html>
