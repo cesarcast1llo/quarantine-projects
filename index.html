@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Timer | Quarantine Projects</title>
+    <title>Quarantine Projects</title>
     <link rel="shortcut icon" type="image/png" href="./assets/images/ccc.png" />
     <meta
       description="Building out awesome projects while learning new responsive page skills"
@@ -16,14 +16,21 @@
     <link href="./assets/styles/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button onclick="myFunction()">Toggle dark mode</button>
+    <div class="dark-mode-switch">
+      <label class="switch">
+        <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <p id="emoji">☀️</p>
+    </div>
+
     <div class="index-wrapper">
       <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
       <h1>Quarantine Projects</h1>
       <div class="controls">
-         <a href="/timer.html">
-        <button>Timer</button>
-      </a>
+        <a href="/timer.html">
+          <button>Timer</button>
+        </a>
       </div>
     </div>
   </body>
