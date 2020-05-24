@@ -6,6 +6,11 @@
   color: #096f86;
 }
 
+.dark-mode .dark-mode-switch .switch .slider.round:before {
+  border-radius: 50%;
+  background-color: white;
+}
+
 .dark-mode .index-wrapper .controls button {
   color: #096f86;
   border-color: #096f86;
@@ -85,11 +90,12 @@ body .dark-mode-switch .switch input:checked + .slider:before {
 body .dark-mode-switch .switch .slider.round {
   border-radius: 34px;
   outline: none;
+  background-color: white;
 }
 
 body .dark-mode-switch .switch .slider.round:before {
   border-radius: 50%;
-  background-color: white;
+  background-color: #17d4fe;
 }
 
 body .dark-mode-switch p {
