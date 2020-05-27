@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poiret+One&family=Raleway&display=swap");
 .dark-mode {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9e9e9e));
-  background: linear-gradient(180deg, #ffffff, #9e9e9e);
-  color: #096f86;
+  color: #17d4fe;
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
@@ -12,16 +10,44 @@
 }
 
 .dark-mode .index-wrapper .controls button {
-  color: #096f86;
-  border-color: #096f86;
+  color: #17d4fe;
+  border-color: #17d4fe;
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
-  background: linear-gradient(0deg, #000000, #2f2f2f);
   color: #17d4fe;
   margin: 0 auto;
   max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: animatedBackground 5s linear infinite;
+  animation: animatedBackground 5s linear infinite;
+  background: url(../images/pattern.png);
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -300px -300px;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -300px -300px;
+  }
 }
 
 body .dark-mode-switch {
@@ -37,7 +63,7 @@ body .dark-mode-switch {
 body .dark-mode-switch .switch {
   display: inline-block;
   width: 60px;
-  height: 34px;
+  height: 35px;
   position: absolute;
   top: 30;
   outline: none;
@@ -74,7 +100,7 @@ body .dark-mode-switch .switch .slider:before {
 }
 
 body .dark-mode-switch .switch input:checked + .slider {
-  background-color: #17d4fe;
+  background-color: white;
 }
 
 body .dark-mode-switch .switch input:focus + .slider {
@@ -90,12 +116,12 @@ body .dark-mode-switch .switch input:checked + .slider:before {
 body .dark-mode-switch .switch .slider.round {
   border-radius: 34px;
   outline: none;
-  background-color: white;
+  background-color: #17d4fe;
 }
 
 body .dark-mode-switch .switch .slider.round:before {
   border-radius: 50%;
-  background-color: #17d4fe;
+  background-color: white;
 }
 
 body .dark-mode-switch p {
@@ -120,8 +146,27 @@ body .index-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  margin: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
+  background: linear-gradient(0deg, #000000, #2f2f2f);
+  width: 98vw;
+  height: 30vh;
+  border-radius: 15px;
+  margin-left: -25px;
+}
+
+@media (min-width: 375px) {
+  body .index-wrapper {
+    margin: 0;
+    width: 90vw;
+    height: 30vh;
+  }
+}
+
+@media (min-width: 580px) {
+  body .index-wrapper {
+    width: 65vw;
+    height: 25vh;
+  }
 }
 
 body .index-wrapper .clock {
