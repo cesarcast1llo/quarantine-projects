@@ -155,7 +155,7 @@ body .index-wrapper {
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
   background: linear-gradient(0deg, #000000, #2f2f2f);
   width: 98vw;
-  height: 30vh;
+  height: 40vh;
   border-radius: 15px;
 }
 
@@ -163,7 +163,7 @@ body .index-wrapper {
   body .index-wrapper {
     margin: 0;
     width: 90vw;
-    height: 30vh;
+    height: 50vh;
   }
 }
 

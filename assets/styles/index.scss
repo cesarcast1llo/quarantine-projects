@@ -149,13 +149,13 @@ body {
     justify-content: center;
     background: linear-gradient(0deg, #000000, #2f2f2f);
     width: 98vw;
-    height: 30vh;
+    height: 40vh;
     border-radius: 15px;
 
     @media (min-width: 375px) {
       margin: 0;
       width: 90vw;
-      height: 30vh;
+      height: 50vh;
     }
 
     @media (min-width: 580px) {
