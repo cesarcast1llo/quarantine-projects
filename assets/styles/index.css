@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poiret+One&family=Raleway&display=swap");
 .dark-mode {
+  background: url(../images/darkpattern.jpg);
   color: #17d4fe;
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
   border-radius: 50%;
-  background-color: white;
+  background-color: #17d4fe;
+}
+
+.dark-mode .index-wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d4f2fd));
+  background: linear-gradient(180deg, #ffffff, #d4f2fd);
 }
 
 .dark-mode .index-wrapper .controls button {
@@ -37,7 +43,7 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: -300px -300px;
+    background-position: -75px -75px;
   }
 }
 
@@ -46,7 +52,7 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: -300px -300px;
+    background-position: -75px -75px;
   }
 }
 
@@ -151,7 +157,6 @@ body .index-wrapper {
   width: 98vw;
   height: 30vh;
   border-radius: 15px;
-  margin-left: -25px;
 }
 
 @media (min-width: 375px) {
@@ -164,8 +169,14 @@ body .index-wrapper {
 
 @media (min-width: 580px) {
   body .index-wrapper {
-    width: 65vw;
+    width: 75vw;
     height: 25vh;
+  }
+}
+
+@media (min-width: 769px) {
+  body .index-wrapper {
+    width: 65vw;
   }
 }
 
@@ -179,13 +190,13 @@ body .index-wrapper .clock {
 
 @media (min-width: 400px) {
   body .index-wrapper .clock {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 769px) {
   body .index-wrapper .clock {
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 10px;
   }
 }
