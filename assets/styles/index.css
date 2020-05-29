@@ -154,28 +154,28 @@ body .index-wrapper {
           justify-content: center;
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
   background: linear-gradient(0deg, #000000, #2f2f2f);
-  width: 98vw;
-  height: 40vh;
+  width: 95vw;
   border-radius: 15px;
+  padding: 45px 0;
 }
 
 @media (min-width: 375px) {
   body .index-wrapper {
     margin: 0;
     width: 90vw;
-    height: 50vh;
   }
 }
 
 @media (min-width: 580px) {
   body .index-wrapper {
     width: 75vw;
-    height: 25vh;
+    padding: 40px 0;
   }
 }
 
 @media (min-width: 769px) {
   body .index-wrapper {
+    padding: 60px 0;
     width: 65vw;
   }
 }
@@ -183,21 +183,23 @@ body .index-wrapper {
 body .index-wrapper .clock {
   font-family: 'Orbitron', sans-serif;
   padding-bottom: 10px;
-  font-size: 38px;
-  line-height: 42px;
+  font-size: 35px;
+  line-height: 38px;
   letter-spacing: 2px;
 }
 
 @media (min-width: 400px) {
   body .index-wrapper .clock {
     font-size: 40px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: 769px) {
   body .index-wrapper .clock {
-    font-size: 50px;
-    letter-spacing: 10px;
+    font-size: 45px;
+    line-height: 49px;
+    letter-spacing: 5px;
   }
 }
 
@@ -237,14 +239,13 @@ body .index-wrapper .controls a button {
   padding: 10px 20px;
   letter-spacing: 3px;
   display: block;
-  width: 300px;
+  width: 250px;
 }
 
 @media (min-width: 581px) {
   body .index-wrapper .controls a button {
     display: inline-block;
     margin: 0 5px;
-    width: inherit;
     padding: 10px 40px;
   }
 }
