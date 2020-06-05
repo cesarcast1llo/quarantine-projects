@@ -1,14 +1,31 @@
 <html>
   <head>
     <title>Quarantine Projects</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/images/monty5.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest" />
     <meta
       description="Building out awesome projects while learning new responsive page skills"
     />
-    <meta property="og:title" content="Timer || Quarantine Projects" />
+    <meta property="og:title" content="Projects || Quarantine Projects" />
     <meta charset="utf-8" />
-    <meta itemprop="name" content="Quarantine Projects" />
-    <meta itemprop="description" content="Quarantine projects" />
+    <meta itemprop="name" content="Projects || Quarantine Projects" />
+    <meta itemprop="description" content="Quarantine Projects" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
@@ -17,26 +34,26 @@
   </head>
   <body>
     <main>
-    <div class="dark-mode-switch">
-      <label class="switch">
-        <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <p id="emoji">🌚</p>
-    </div>
-    <div class="index-wrapper">
-      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-      <h1>Quarantine Projects</h1>
-      <div class="controls">
-        <a href="/timer.html">
-          <button>Timer</button>
-        </a>
-        <a href="/timer.html">
-          <button>Stocks</button>
-        </a>
+      <div class="dark-mode-switch">
+        <label class="switch">
+          <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p id="emoji">🌚</p>
       </div>
-    </div>
-  </main>
+      <div class="index-wrapper">
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <h1>Quarantine Projects</h1>
+        <div class="controls">
+          <a href="/timer.html">
+            <button>TIMER</button>
+          </a>
+          <a href="/stocks.html">
+            <button>STOCKS</button>
+          </a>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="./assets/js/index.js"></script>
 </html>

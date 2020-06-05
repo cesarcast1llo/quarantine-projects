@@ -146,7 +146,6 @@ body .index-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90vw;
   max-width: 700px;
   border-radius: 15px;
   padding: 45px 0;
@@ -188,18 +187,17 @@ body .index-wrapper .clock {
 }
 
 body .index-wrapper h1 {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One';
   font-size: 2.5rem;
   letter-spacing: 3px;
   margin: 0;
   text-align: center;
-  padding-bottom: 40px;
+  padding: 20px 0;
 }
 
-@media (min-width: 769) {
+@media (min-width: 375px) {
   body .index-wrapper h1 {
-    font-size: 4rem;
-    letter-spacing: 5px;
+    padding: 20px 0 40px;
   }
 }
 
@@ -217,13 +215,15 @@ body .index-wrapper .controls a button {
   border: 2px solid #000000;
   border-radius: 10px;
   background-color: inherit;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One';
   font-size: 25px;
   margin: 10px;
   padding: 10px 20px;
   letter-spacing: 3px;
   display: inline-block;
   width: 250px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 @media (min-width: 769px) {

@@ -43,11 +43,31 @@
 body {
   background: linear-gradient(180deg, #ffffff, #808080);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
+  -webkit-animation: animatedBackground 10s linear infinite;
+  animation: animatedBackground 10s linear infinite;
+  background: url(../images/pattern.png);
+
+  @-webkit-keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -100px -100px;
+    }
+  }
+
+  @keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+
+    to {
+      background-position: -100px -100px;
+    }
+  }
 
   .dark-mode-switch {
     display: flex;
@@ -151,16 +171,11 @@ body {
 
     h1 {
       color: #000000;
-      font-family: 'Poiret One', cursive;
+      font-family: 'Poiret One';
       font-size: 2.5rem;
       letter-spacing: 3px;
       margin: 0;
       text-align: center;
-
-      @media (min-width: 769) {
-        font-size: 4rem;
-        letter-spacing: 5px;
-      }
     }
 
     .controls {
@@ -168,17 +183,19 @@ body {
 
       button {
         cursor: pointer;
-        border: 1px solid #000000;
+        border: 2px solid #000000;
         border-radius: 10px;
         background-color: inherit;
         color: #000000;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Poiret One';
         font-size: 20px;
         margin: 15px auto;
         padding: 10px 20px;
         letter-spacing: 3px;
         display: block;
         width: 250px;
+        font-weight: 800;
+        text-transform: uppercase;
 
         @media (min-width: 375px) {
           width: 300px;
@@ -202,8 +219,11 @@ body {
       .stopwatch {
         color: #000000;
         font-family: 'Noto Sans', sans-serif;
-        padding-bottom: 20px;
         font-size: 70px;
+        padding-top: 20px;
+        @media (min-width: 769px) {
+          padding-bottom: 20px;
+        }
       }
     }
   }

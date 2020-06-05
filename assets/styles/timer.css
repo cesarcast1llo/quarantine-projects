@@ -33,18 +33,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  margin: 0;
+  -webkit-animation: animatedBackground 10s linear infinite;
+  animation: animatedBackground 10s linear infinite;
+  background: url(../images/pattern.png);
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100px -100px;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100px -100px;
+  }
 }
 
 body .dark-mode-switch {
@@ -163,18 +178,11 @@ body .timer-wrapper {
 
 body .timer-wrapper h1 {
   color: #000000;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One';
   font-size: 2.5rem;
   letter-spacing: 3px;
   margin: 0;
   text-align: center;
-}
-
-@media (min-width: 769) {
-  body .timer-wrapper h1 {
-    font-size: 4rem;
-    letter-spacing: 5px;
-  }
 }
 
 body .timer-wrapper .controls {
@@ -183,17 +191,19 @@ body .timer-wrapper .controls {
 
 body .timer-wrapper .controls button {
   cursor: pointer;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 10px;
   background-color: inherit;
   color: #000000;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One';
   font-size: 20px;
   margin: 15px auto;
   padding: 10px 20px;
   letter-spacing: 3px;
   display: block;
   width: 250px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {
@@ -222,7 +232,13 @@ body .timer-wrapper .controls button:focus {
 body .timer-wrapper .controls .stopwatch {
   color: #000000;
   font-family: 'Noto Sans', sans-serif;
-  padding-bottom: 20px;
   font-size: 70px;
+  padding-top: 20px;
+}
+
+@media (min-width: 769px) {
+  body .timer-wrapper .controls .stopwatch {
+    padding-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=timer.css.map */
