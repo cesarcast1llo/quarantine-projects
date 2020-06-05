@@ -1,48 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poiret+One&family=Raleway&display=swap");
 .dark-mode {
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#3d3e3d));
-  background: linear-gradient(0deg, #000000, #3d3e3d);
+  background: url(../images/darkpattern.jpg);
   color: #17d4fe;
 }
 
-.dark-mode .dark-mode-switch .switch input:checked + .slider {
-  background-color: white;
-}
-
 .dark-mode .dark-mode-switch .switch .slider.round:before {
+  border-radius: 50%;
   background-color: #17d4fe;
 }
 
-.dark-mode .timer-wrapper {
+.dark-mode .index-wrapper {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d4f2fd));
   background: linear-gradient(180deg, #ffffff, #d4f2fd);
 }
 
-.dark-mode .timer-wrapper .controls button {
+.dark-mode .index-wrapper .controls button {
   color: #17d4fe;
   border-color: #17d4fe;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#000000));
-  background: linear-gradient(180deg, #ffffff, #000000);
-  color: white;
+  color: #17d4fe;
+  margin: 0 auto;
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  margin: 0;
+  -webkit-animation: animatedBackground 5s linear infinite;
+  animation: animatedBackground 5s linear infinite;
+  background: url(../images/pattern.png);
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -75px -75px;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -75px -75px;
+  }
 }
 
 body .dark-mode-switch {
@@ -58,7 +69,7 @@ body .dark-mode-switch {
 body .dark-mode-switch .switch {
   display: inline-block;
   width: 60px;
-  height: 34px;
+  height: 35px;
   position: absolute;
   top: 30;
   outline: none;
@@ -95,7 +106,7 @@ body .dark-mode-switch .switch .slider:before {
 }
 
 body .dark-mode-switch .switch input:checked + .slider {
-  background-color: #17d4fe;
+  background-color: white;
 }
 
 body .dark-mode-switch .switch input:focus + .slider {
@@ -111,6 +122,7 @@ body .dark-mode-switch .switch input:checked + .slider:before {
 body .dark-mode-switch .switch .slider.round {
   border-radius: 34px;
   outline: none;
+  background-color: #17d4fe;
 }
 
 body .dark-mode-switch .switch .slider.round:before {
@@ -126,7 +138,7 @@ body .dark-mode-switch p {
   font-size: 30px;
 }
 
-body .timer-wrapper {
+body .stock-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,87 +152,47 @@ body .timer-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #000000;
-  width: 90vw;
-  max-width: 700px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
+  background: linear-gradient(0deg, #000000, #2f2f2f);
+  width: 95vw;
   border-radius: 15px;
   padding: 45px 0;
 }
 
 @media (min-width: 375px) {
-  body .timer-wrapper {
+  body .stock-wrapper {
     margin: 0;
+    width: 90vw;
+  }
+}
+
+@media (min-width: 580px) {
+  body .stock-wrapper {
+    width: 75vw;
+    padding: 40px 0;
   }
 }
 
 @media (min-width: 769px) {
-  body .timer-wrapper {
-    padding: 55px 0;
+  body .stock-wrapper {
+    padding: 60px 0;
+    width: 65vw;
   }
 }
 
-body .timer-wrapper h1 {
-  color: #17d4fe;
+body .stock-wrapper h1 {
   font-family: 'Poiret One', cursive;
   font-size: 2.5rem;
   letter-spacing: 3px;
   margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 769) {
-  body .timer-wrapper h1 {
+  body .stock-wrapper h1 {
     font-size: 4rem;
     letter-spacing: 5px;
   }
 }
-
-body .timer-wrapper .controls {
-  text-align: center;
-}
-
-body .timer-wrapper .controls button {
-  cursor: pointer;
-  border: 1px solid #17d4fe;
-  border-radius: 10px;
-  background-color: inherit;
-  color: #17d4fe;
-  font-family: 'Poiret One', cursive;
-  font-size: 20px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  letter-spacing: 3px;
-  display: block;
-  width: 300px;
-}
-
-@media (min-width: 581px) {
-  body .timer-wrapper .controls button {
-    display: inline-block;
-    margin: 0 5px;
-    width: inherit;
-    padding: 10px 30px;
-  }
-}
-
-@media (min-width: 769px) {
-  body .timer-wrapper .controls button {
-    padding: 10px 40px;
-    margin: 0 5px;
-    font-size: 25px;
-    letter-spacing: 4px;
-  }
-}
-
-body .timer-wrapper .controls button:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-body .timer-wrapper .controls .stopwatch {
-  color: #17d4fe;
-  font-family: 'Noto Sans', sans-serif;
-  padding-bottom: 20px;
-  font-size: 70px;
-}
-/*# sourceMappingURL=timer.css.map */
+/*# sourceMappingURL=stocks.css.map */

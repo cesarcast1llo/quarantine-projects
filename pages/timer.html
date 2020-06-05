@@ -4,7 +4,7 @@
     <link
       rel="shortcut icon"
       type="image/png"
-      href="../assets/images/ccc.png"
+      href="../assets/images/monty5.png"
     />
     <meta
       description="Building out awesome projects while learning new responsive page skills"
@@ -20,23 +20,25 @@
     <link href="../assets/styles/timer.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="dark-mode-switch">
-      <label class="switch">
-        <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-      <p id="emoji">☀️</p>
-    </div>
-    <div class="timer-wrapper">
-      <h1>Quarantine Timer</h1>
-      <div class="controls">
-        <div class="stopwatch">00:00:00</div>
-        <button onclick="start()">START</button>
-        <button onclick="pause()">PAUSE</button>
-        <button onclick="stop()">STOP</button>
-        <button onclick="restart()">RESTART</button>
+    <main>
+      <div class="dark-mode-switch">
+        <label class="switch">
+          <input onclick="nightMode(); toggleEmoji();" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p id="emoji">🌚</p>
       </div>
-    </div>
+      <div class="timer-wrapper">
+        <h1>Quarantine Timer</h1>
+        <div class="controls">
+          <div class="stopwatch">00:00:00</div>
+          <button onclick="start()">START</button>
+          <button onclick="pause()">PAUSE</button>
+          <button onclick="stop()">STOP</button>
+          <button onclick="restart()">RESTART</button>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="../assets/js/timer.js"></script>
   <script src="../assets/js/index.js"></script>

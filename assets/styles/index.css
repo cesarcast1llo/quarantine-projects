@@ -6,7 +6,6 @@
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
-  border-radius: 50%;
   background-color: #17d4fe;
 }
 
@@ -152,9 +151,9 @@ body .index-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#2f2f2f));
-  background: linear-gradient(0deg, #000000, #2f2f2f);
-  width: 95vw;
+  background: #000000;
+  width: 90vw;
+  max-width: 700px;
   border-radius: 15px;
   padding: 45px 0;
 }
@@ -162,21 +161,12 @@ body .index-wrapper {
 @media (min-width: 375px) {
   body .index-wrapper {
     margin: 0;
-    width: 90vw;
-  }
-}
-
-@media (min-width: 580px) {
-  body .index-wrapper {
-    width: 75vw;
-    padding: 40px 0;
   }
 }
 
 @media (min-width: 769px) {
   body .index-wrapper {
-    padding: 60px 0;
-    width: 65vw;
+    padding: 55px 0;
   }
 }
 
@@ -221,6 +211,7 @@ body .index-wrapper h1 {
 
 body .index-wrapper .controls {
   text-align: center;
+  padding: 0 10px;
 }
 
 body .index-wrapper .controls a {
@@ -235,24 +226,16 @@ body .index-wrapper .controls a button {
   background-color: inherit;
   font-family: 'Poiret One', cursive;
   font-size: 25px;
-  margin: 10px auto;
+  margin: 10px;
   padding: 10px 20px;
   letter-spacing: 3px;
-  display: block;
+  display: inline-block;
   width: 250px;
-}
-
-@media (min-width: 581px) {
-  body .index-wrapper .controls a button {
-    display: inline-block;
-    margin: 0 5px;
-    padding: 10px 40px;
-  }
 }
 
 @media (min-width: 769px) {
   body .index-wrapper .controls a button {
-    margin: 0 5px;
+    width: 250px;
     letter-spacing: 4px;
   }
 }
