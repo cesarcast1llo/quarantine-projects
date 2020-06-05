@@ -14,27 +14,34 @@
       }
       .slider.round {
         &:before {
-          background-color: #17d4fe;
+          background-color: #000000;
         }
       }
     }
   }
 
   .timer-wrapper {
-    background: linear-gradient(180deg, #ffffff, #d4f2fd);
+    // background: linear-gradient(180deg, #ffffff, #d4f2fd);
+
+    h1 {
+      color: #17d4fe;
+    }
 
     .controls {
       button {
         color: #17d4fe;
         border-color: #17d4fe;
       }
+
+      .stopwatch {
+        color: #17d4fe;
+      }
     }
   }
 }
 
 body {
-  background: linear-gradient(180deg, #ffffff, #000000);
-  color: white;
+  background: linear-gradient(180deg, #ffffff, #808080);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,11 +135,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #000000;
     width: 90vw;
     max-width: 700px;
     border-radius: 15px;
     padding: 45px 0;
+    margin: 0 15px;
 
     @media (min-width: 375px) {
       margin: 0;
@@ -143,11 +150,12 @@ body {
     }
 
     h1 {
-      color: #17d4fe;
+      color: #000000;
       font-family: 'Poiret One', cursive;
       font-size: 2.5rem;
       letter-spacing: 3px;
       margin: 0;
+      text-align: center;
 
       @media (min-width: 769) {
         font-size: 4rem;
@@ -160,27 +168,26 @@ body {
 
       button {
         cursor: pointer;
-        border: 1px solid #17d4fe;
+        border: 1px solid #000000;
         border-radius: 10px;
         background-color: inherit;
-        color: #17d4fe;
+        color: #000000;
         font-family: 'Poiret One', cursive;
         font-size: 20px;
-        margin: 10px auto;
+        margin: 15px auto;
         padding: 10px 20px;
         letter-spacing: 3px;
         display: block;
-        width: 300px;
+        width: 250px;
 
-        @media (min-width: 581px) {
-          display: inline-block;
-          margin: 0 5px;
-          width: inherit;
-          padding: 10px 30px;
+        @media (min-width: 375px) {
+          width: 300px;
         }
 
         @media (min-width: 769px) {
-          padding: 10px 40px;
+          display: inline-block;
+          width: 150px;
+          padding: 10px 0;
           margin: 0 5px;
           font-size: 25px;
           letter-spacing: 4px;
@@ -191,8 +198,9 @@ body {
           box-shadow: none;
         }
       }
+
       .stopwatch {
-        color: #17d4fe;
+        color: #000000;
         font-family: 'Noto Sans', sans-serif;
         padding-bottom: 20px;
         font-size: 70px;

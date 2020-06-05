@@ -11,12 +11,11 @@
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
-  background-color: #17d4fe;
+  background-color: #000000;
 }
 
-.dark-mode .timer-wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d4f2fd));
-  background: linear-gradient(180deg, #ffffff, #d4f2fd);
+.dark-mode .timer-wrapper h1 {
+  color: #17d4fe;
 }
 
 .dark-mode .timer-wrapper .controls button {
@@ -24,10 +23,13 @@
   border-color: #17d4fe;
 }
 
+.dark-mode .timer-wrapper .controls .stopwatch {
+  color: #17d4fe;
+}
+
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#000000));
-  background: linear-gradient(180deg, #ffffff, #000000);
-  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#808080));
+  background: linear-gradient(180deg, #ffffff, #808080);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,11 +142,11 @@ body .timer-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #000000;
   width: 90vw;
   max-width: 700px;
   border-radius: 15px;
   padding: 45px 0;
+  margin: 0 15px;
 }
 
 @media (min-width: 375px) {
@@ -160,11 +162,12 @@ body .timer-wrapper {
 }
 
 body .timer-wrapper h1 {
-  color: #17d4fe;
+  color: #000000;
   font-family: 'Poiret One', cursive;
   font-size: 2.5rem;
   letter-spacing: 3px;
   margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 769) {
@@ -180,31 +183,30 @@ body .timer-wrapper .controls {
 
 body .timer-wrapper .controls button {
   cursor: pointer;
-  border: 1px solid #17d4fe;
+  border: 1px solid #000000;
   border-radius: 10px;
   background-color: inherit;
-  color: #17d4fe;
+  color: #000000;
   font-family: 'Poiret One', cursive;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 10px 20px;
   letter-spacing: 3px;
   display: block;
-  width: 300px;
+  width: 250px;
 }
 
-@media (min-width: 581px) {
+@media (min-width: 375px) {
   body .timer-wrapper .controls button {
-    display: inline-block;
-    margin: 0 5px;
-    width: inherit;
-    padding: 10px 30px;
+    width: 300px;
   }
 }
 
 @media (min-width: 769px) {
   body .timer-wrapper .controls button {
-    padding: 10px 40px;
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0;
     margin: 0 5px;
     font-size: 25px;
     letter-spacing: 4px;
@@ -218,7 +220,7 @@ body .timer-wrapper .controls button:focus {
 }
 
 body .timer-wrapper .controls .stopwatch {
-  color: #17d4fe;
+  color: #000000;
   font-family: 'Noto Sans', sans-serif;
   padding-bottom: 20px;
   font-size: 70px;
