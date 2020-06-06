@@ -70,7 +70,7 @@ body {
       width: 60px;
       height: 35px;
       position: absolute;
-      top: 30;
+      top: 20;
       outline: none;
 
       input {
@@ -135,8 +135,10 @@ body {
 
     p {
       position: absolute;
-      top: 68;
+      top: 17;
+      right: 65;
       margin: 0;
+      display: inline-block;
       padding-right: 15px;
       font-size: 30px;
     }
