@@ -14,7 +14,7 @@
       }
       .slider.round {
         &:before {
-          background-color: #000000;
+          background-color: #17d4fe;
         }
       }
     }
@@ -43,6 +43,8 @@
 body {
   background: linear-gradient(180deg, #ffffff, #808080);
   display: flex;
+  margin: 0;
+  padding: 0;
   align-items: center;
   justify-content: center;
   -webkit-animation: animatedBackground 10s linear infinite;
@@ -176,6 +178,11 @@ body {
       letter-spacing: 3px;
       margin: 0;
       text-align: center;
+      padding-top: 60px;
+
+      @media (min-width: 376px) {
+        padding: 0;
+      }
     }
 
     .controls {
@@ -220,7 +227,6 @@ body {
         color: #000000;
         font-family: 'Noto Sans', sans-serif;
         font-size: 70px;
-        padding-top: 20px;
         @media (min-width: 769px) {
           padding-bottom: 20px;
         }

@@ -14,7 +14,7 @@
       }
       .slider.round {
         &:before {
-          background-color: #000000;
+          background-color: #17d4fe;
         }
       }
     }
@@ -43,7 +43,8 @@
 body {
   // animation files activated in heroku
   color: #17d4fe;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   max-width: 1000px;
   display: flex;
   align-items: center;

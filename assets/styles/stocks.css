@@ -10,7 +10,7 @@
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
-  background-color: #000000;
+  background-color: #17d4fe;
 }
 
 .dark-mode .timer-wrapper h1 {
@@ -28,7 +28,8 @@
 
 body {
   color: #17d4fe;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;

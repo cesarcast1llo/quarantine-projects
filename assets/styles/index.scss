@@ -9,7 +9,7 @@
     .switch {
       .slider.round {
         &:before {
-          background-color: #000000;
+          background-color: #17d4fe;
         }
       }
     }
@@ -29,7 +29,8 @@
 
 body {
   // animation files activated in heroku
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   color: #000000;
   max-width: 1000px;
   display: flex;
@@ -161,7 +162,7 @@ body {
 
     .clock {
       font-family: 'Orbitron', sans-serif;
-      padding-bottom: 10px;
+      padding-top: 30px;
       font-size: 35px;
       line-height: 38px;
       letter-spacing: 2px;
@@ -187,7 +188,7 @@ body {
       padding: 20px 0;
 
       @media (min-width: 375px) {
-        padding: 20px 0 40px;
+        padding: 20px 0;
       }
     }
 

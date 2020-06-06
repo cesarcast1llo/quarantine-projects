@@ -6,7 +6,7 @@
 }
 
 .dark-mode .dark-mode-switch .switch .slider.round:before {
-  background-color: #000000;
+  background-color: #17d4fe;
 }
 
 .dark-mode .index-wrapper .controls button {
@@ -15,7 +15,8 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   color: #000000;
   max-width: 1000px;
   display: -webkit-box;
@@ -165,7 +166,7 @@ body .index-wrapper {
 
 body .index-wrapper .clock {
   font-family: 'Orbitron', sans-serif;
-  padding-bottom: 10px;
+  padding-top: 30px;
   font-size: 35px;
   line-height: 38px;
   letter-spacing: 2px;
@@ -197,7 +198,7 @@ body .index-wrapper h1 {
 
 @media (min-width: 375px) {
   body .index-wrapper h1 {
-    padding: 20px 0 40px;
+    padding: 20px 0;
   }
 }
 
