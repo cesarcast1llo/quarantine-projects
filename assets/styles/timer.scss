@@ -145,7 +145,7 @@ body {
 
     p {
       position: absolute;
-      top: 25;
+      top: 27;
       right: 85;
       margin: 0;
       display: inline-block;
@@ -177,10 +177,11 @@ body {
       color: #000000;
       font-family: 'Poiret One';
       font-size: 2.5rem;
+      line-height: 2.7rem;
       letter-spacing: 3px;
       margin: 0;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 10px;
 
       @media (min-width: 376px) {
         padding: 0;
@@ -229,6 +230,7 @@ body {
         color: #000000;
         font-family: 'Noto Sans', sans-serif;
         font-size: 70px;
+        line-height: 78px;
         @media (min-width: 769px) {
           padding-bottom: 20px;
         }

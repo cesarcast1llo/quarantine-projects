@@ -138,7 +138,7 @@ body .dark-mode-switch .switch .slider.round:before {
 
 body .dark-mode-switch p {
   position: absolute;
-  top: 25;
+  top: 27;
   right: 85;
   margin: 0;
   display: inline-block;
@@ -183,10 +183,11 @@ body .timer-wrapper h1 {
   color: #000000;
   font-family: 'Poiret One';
   font-size: 2.5rem;
+  line-height: 2.7rem;
   letter-spacing: 3px;
   margin: 0;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 @media (min-width: 376px) {
@@ -243,6 +244,7 @@ body .timer-wrapper .controls .stopwatch {
   color: #000000;
   font-family: 'Noto Sans', sans-serif;
   font-size: 70px;
+  line-height: 78px;
 }
 
 @media (min-width: 769px) {
